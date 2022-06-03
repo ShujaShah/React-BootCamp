@@ -18,15 +18,23 @@ class Toggle extends Component {
   render() {
     if (this.state.visibility) {
       return (
-        <div>
-          <button onClick={this.toggleVisibility}> Click Me</button>
-          <h1>Hello there, i am visibile buddy.</h1>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <button onClick={this.toggleVisibility}> Click Me</button>
+            <h1>Hello there, i am visibile buddy.</h1>
+          </div>
+          <div class="col-md-4"></div>
         </div>
       );
     } else {
       return (
-        <div>
-          <button onClick={this.toggleVisibility}>Click Me!</button>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <button onClick={this.toggleVisibility}>Click Me!</button>
+          </div>
+          <div class="col-md-4"></div>
         </div>
       );
     }
